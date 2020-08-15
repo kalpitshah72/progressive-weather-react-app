@@ -39,6 +39,7 @@ button {
   margin-bottom: 30px;
   margin-left: 10px;
   background: rgba(250, 250, 250, 0.85);
+  text-align: center;
 }
 
 .city {
