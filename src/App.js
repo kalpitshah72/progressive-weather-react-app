@@ -21,7 +21,7 @@ const App = () => {
         onChange={(e) => setQuery(e.target.value)}
         // onKeyPress={search}
       />
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
         <button type="submit" onClick={search}>
           Submit
         </button>
