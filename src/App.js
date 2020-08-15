@@ -21,11 +21,11 @@ const App = () => {
         onChange={(e) => setQuery(e.target.value)}
         // onKeyPress={search}
       />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <button type="submit" onClick={search}>
-          Submit
-        </button>
-        <button
+      {/* <div style={{ display: "flex", justifyContent: "space-between" }}> */}
+      <button type="submit" onClick={search}>
+        Submit
+      </button>
+      {/* <button
           type="reset"
           onClick={() => {
             setQuery("");
@@ -33,8 +33,8 @@ const App = () => {
           }}
         >
           Reset
-        </button>
-      </div>
+        </button> */}
+      {/* </div> */}
       {weather.main && (
         <div className="city">
           <h2 className="city-name">
