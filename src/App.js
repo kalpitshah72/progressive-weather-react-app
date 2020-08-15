@@ -25,7 +25,13 @@ const App = () => {
         <button type="submit" onClick={search}>
           Submit
         </button>
-        <button type="reset" onClick={() => setQuery("")}>
+        <button
+          type="reset"
+          onClick={() => {
+            setQuery("");
+            setWeather({});
+          }}
+        >
           Reset
         </button>
       </div>
