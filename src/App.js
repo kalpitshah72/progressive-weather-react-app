@@ -5,11 +5,11 @@ const App = () => {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
   const search = async (e) => {
-    // if (e.key === "Enter") {
-    const data = await getWeather(query);
-    setWeather(data);
-    // setQuery("");
-    // }
+    if (e.key === "Enter") {
+      const data = await getWeather(query);
+      setWeather(data);
+      setQuery("");
+    }
   };
   return (
     <div className="main-container">
@@ -19,22 +19,8 @@ const App = () => {
         placeholder="Enter City Name"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        // onKeyPress={search}
+        onKeyPress={search}
       />
-      {/* <div style={{ display: "flex", justifyContent: "space-between" }}> */}
-      <button type="submit" onClick={search}>
-        Submit
-      </button>
-      {/* <button
-          type="reset"
-          onClick={() => {
-            setQuery("");
-            setWeather({});
-          }}
-        >
-          Reset
-        </button> */}
-      {/* </div> */}
       {weather.main && (
         <div className="city">
           <h2 className="city-name">

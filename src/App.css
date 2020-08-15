@@ -32,16 +32,6 @@ body,
   background: rgba(250, 250, 250, 0.85);
 }
 
-button {
-  padding: 10px 2%;
-  border-radius: 15px;
-  border: none;
-  margin-bottom: 5%;
-  /* margin-left: 10px; */
-  background: rgba(250, 250, 250, 0.85);
-  text-align: center;
-}
-
 .city {
   display: flex;
   align-items: center;
